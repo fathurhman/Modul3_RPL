@@ -50,7 +50,8 @@ class BukuView(ctk.CTk):
             fg_color="green"
         )
         self.btn_simpan.pack(pady=20, padx=15, fill="x")
-        # Tombol  baru
+
+        # Tombol baru
         self.btn_update = ctk.CTkButton(
             self.frame_kiri,
             text="Perbarui Data (Update)",
@@ -64,6 +65,16 @@ class BukuView(ctk.CTk):
             fg_color="red"
         )
         self.btn_delete.pack(pady=10, padx=15, fill="x")
+
+        # ============================
+        # TUGAS NO. 3: TOMBOL LOGOUT
+        # ============================
+        self.btn_logout = ctk.CTkButton(
+            self.frame_kiri,
+            text="Logout",
+            fg_color="gray"
+        )
+        self.btn_logout.pack(pady=10, padx=15, fill="x")
 
         # ============================
         # FRAME KANAN: TABEL DATA BUKU
